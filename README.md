@@ -34,7 +34,7 @@ from lupaxa.text_analyse import analyse, analyse_code, analyse_text, fetch_text
 analyse("The cat sat on the mat.")
 analyse(open("README.md", encoding="utf-8").read(), source="README.md")
 analyse_code(open("script.py", encoding="utf-8").read())
-fetch_text("https://example.com/article")
+fetch_text("https://example.com")
 ```
 
 `analyse` uses `mode="auto"` unless you pass `text` or `code`. Pass
@@ -64,7 +64,7 @@ as aligned lines. `--format json` prints the result object.
 
 ```bash
 text-analyse article.txt
-text-analyse --url https://example.com/article
+text-analyse --url https://example.com
 text-analyse --min-flesch 60 README.md
 text-analyse docs/ --check --min-flesch 60
 text-analyse --mode code script.py
