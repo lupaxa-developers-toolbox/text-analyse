@@ -23,7 +23,8 @@ def analyse(
     source: str | None = None,
     reading_age_scheme: str = ...,
     wpm: int = ...,
-) -> TextAnalysis: ...
+) -> TextAnalysis:
+    pass
 
 
 @overload
@@ -34,7 +35,8 @@ def analyse(
     source: str | None = None,
     reading_age_scheme: str = ...,
     wpm: int = ...,
-) -> CodeAnalysis: ...
+) -> CodeAnalysis:
+    pass
 
 
 @overload
@@ -45,7 +47,8 @@ def analyse(
     source: str | None = None,
     reading_age_scheme: str = ...,
     wpm: int = ...,
-) -> TextAnalysis | CodeAnalysis: ...
+) -> TextAnalysis | CodeAnalysis:
+    pass
 
 
 def analyse(
